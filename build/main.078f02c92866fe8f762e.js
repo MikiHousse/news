@@ -1,1 +1,0 @@
-(()=>{"use strict";console.log("Random"),document.body.innerHTML="hello word"})();
