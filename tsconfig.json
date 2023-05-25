@@ -1,28 +1,32 @@
 {
-  "compilerOptions": {
-    // то куда производится сборка проекта
-    "outDir": "./dist/",
-    // подсвечивает места где не указан тип
-    "noImplicitAny": true,
-    // указываем модульную сборку
-    "module": "esnext",
-    // указываем стандарт в который код будет компилироваться
-    "target": "es5",
-    "jsx": "react-jsx",
-    // компилятор будет обрабатывать не только ts файлы но и js файлы
-    "allowJs": true,
-    // определяет то какие импорты будут 
-    "moduleResolution": "node",
-    //  для абсолютного импорта
-    // "baseUrl": ".",
-    // позволяет работать с пакетами которы используют common js как с обычным покетом с помощью (import require() modeule.export) = common js
-    "esModuleInterop": true,
-    // Если какая либо библиотека не имеет default export, лодеры вроде ts-loader или babel-loader атоматически создают их вместо импорта
-    "allowSyntheticDefaultImports": true
-  },
-  "ts-node": {
-    "compilerOptions": {
-      "module": "CommonJS"
-    }
-  }
+	"compilerOptions": {
+		// то куда производится сборка проекта
+		"outDir": "./dist/",
+		// подсвечивает места где не указан тип
+		"noImplicitAny": true,
+		// указываем модульную сборку
+		"module": "esnext",
+		// указываем стандарт в который код будет компилироваться
+		"target": "es5",
+		"jsx": "react-jsx",
+		// компилятор будет обрабатывать не только ts файлы но и js файлы
+		"allowJs": true,
+		// определяет то какие импорты будут
+		"moduleResolution": "node",
+		//  для абсолютного импорта
+		"baseUrl": ".",
+		// Все экспорты и импорты будут идти из папки src
+		"paths": {
+			"*": ["./src/*"]
+		},
+		// позволяет работать с пакетами которы используют common js как с обычным покетом с помощью (import require() modeule.export) = common js
+		"esModuleInterop": true,
+		// Если какая либо библиотека не имеет default export, лодеры вроде ts-loader или babel-loader атоматически создают их вместо импорта
+		"allowSyntheticDefaultImports": true
+	},
+	"ts-node": {
+		"compilerOptions": {
+			"module": "CommonJS"
+		}
+	}
 }
