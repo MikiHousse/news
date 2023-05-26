@@ -2,6 +2,7 @@ module.exports = {
 	env: {
 		browser: true,
 		es2021: true,
+		jest: true,
 	},
 	extends: ['plugin:react/recommended', 'plugin:i18next/recommended'],
 	overrides: [
@@ -47,6 +48,7 @@ module.exports = {
 		'@typescript-eslint/no-floating-promises': 'off',
 		'@typescript-eslint/strict-boolean-expressions': 'off',
 		'i18next/no-literal-string': ['error', { markupOnly: true }],
+		'max-len': ['error', { ignoreComments: true }],
 	},
 	settings: {
 		react: {
