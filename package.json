@@ -1,32 +1,23 @@
 {
-	"name": "news",
+	"name": "production-project",
 	"version": "1.0.0",
 	"description": "",
 	"main": "index.js",
 	"scripts": {
 		"start": "webpack serve --env port=3000",
-		"build:prod": "webpack --env mode=production",
-		"build:dev": "webpack --env mode=development",
-		"lint:ts": " eslint \"**/*.{ts,tsx}\"",
-		"lint:ts:fix": " eslint \"**/*.{ts,tsx}\" --fix",
-		"lint:scss": " npx stylelint \"**/*.scss\"",
-		"lint:scss:fix": " npx stylelint \"**/*.scss\" --fix",
-		"test": "jest --config ./config/jest/jest.config.ts"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/MikiHousse/news.git"
-	},
-	"ts-standard": {
-		"project": "./tsconfig.json"
+		"build:prod": "webpack  --env mode=production",
+		"build:dev": "webpack  --env mode=development",
+		"lint:ts": "eslint \"**/*.{ts,tsx}\"",
+		"lint:ts:fix": "eslint \"**/*.{ts,tsx}\" --fix",
+		"lint:scss": "npx stylelint \"**/*.scss\"",
+		"lint:scss:fix": "npx stylelint \"**/*.scss\" --fix",
+		"unit": "jest --config ./config/jest/jest.config.ts",
+		"analyze:prod": "STATS=server webpack --env mode=production",
+		"analyze:dev": "STATS=server webpack --env mode=development"
 	},
 	"keywords": [],
 	"author": "",
 	"license": "ISC",
-	"bugs": {
-		"url": "https://github.com/MikiHousse/news/issues"
-	},
-	"homepage": "https://github.com/MikiHousse/news#readme",
 	"devDependencies": {
 		"@babel/core": "^7.17.5",
 		"@babel/preset-env": "^7.16.11",
@@ -86,7 +77,7 @@
 		"typescript": "^4.5.5",
 		"webpack": "^5.69.1",
 		"webpack-bundle-analyzer": "^4.5.0",
-		"webpack-cli": "^4.10.0",
+		"webpack-cli": "^4.9.2",
 		"webpack-dev-server": "^4.7.4"
 	},
 	"dependencies": {
