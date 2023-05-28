@@ -47,7 +47,7 @@ module.exports = {
 		'@typescript-eslint/member-delimiter-style': 'off',
 		'@typescript-eslint/no-floating-promises': 'off',
 		'@typescript-eslint/strict-boolean-expressions': 'off',
-		'i18next/no-literal-string': ['error', { markupOnly: true }],
+		'i18next/no-literal-string': ['error', { markupOnly: true, ignoreAttribute: ['data-testid'] }],
 		'max-len': ['error', { ignoreComments: true }],
 	},
 	settings: {
@@ -55,4 +55,9 @@ module.exports = {
 			version: 'detect',
 		},
 	},
+	overrides: [
+		{
+			files: ['**/src/**/*.test.{ts, tsx}'],
+		},
+	],
 };
