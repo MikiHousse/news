@@ -14,3 +14,22 @@
 .mainLink {
   margin-right: 15px;
 }
+
+.menuBtn {
+  background: none;
+  border: none;
+  border-radius: 10px;
+  margin-top: 4px;
+  width: 40px;
+  transition: all 0.3s;
+  fill: var(--primary-color);
+
+  &:hover {
+    background-color: var(--hover-bg-color);
+  }
+
+  svg {
+    margin: 3px 0 0 3px;
+    padding: 3px 3px 0 0;
+  }
+}

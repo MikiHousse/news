@@ -4,7 +4,7 @@ import { Theme } from 'app/providers/ThemeProvider';
 import ThemeDecorator from 'shared/config/storybook/ThemeDecorator/ThemeDecorator';
 
 import Sidebar from './Sidebar';
-import StyleDecorator from 'shared/config/storybook/StyleDecorator/StyleDecorator';
+import RouterDecorator from 'shared/config/storybook/RouterDecorator/RouterDecorator';
 
 export default {
 	title: 'widget/Sidebar',
@@ -18,8 +18,8 @@ const Template: ComponentStory<typeof Sidebar> = (args) => <Sidebar {...args} />
 
 export const Light = Template.bind({});
 Light.args = {};
-Light.decorators = [ThemeDecorator(Theme.LIGHT), StyleDecorator];
+Light.decorators = [ThemeDecorator(Theme.LIGHT), RouterDecorator];
 
 export const Dark = Template.bind({});
 Dark.args = {};
-Dark.decorators = [ThemeDecorator(Theme.DARK), StyleDecorator];
+Dark.decorators = [ThemeDecorator(Theme.DARK), RouterDecorator];
