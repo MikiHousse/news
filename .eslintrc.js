@@ -29,7 +29,7 @@ module.exports = {
 		ecmaVersion: 'latest',
 		sourceType: 'module',
 	},
-	plugins: ['react', '@typescript-eslint', 'i18next'],
+	plugins: ['react', '@typescript-eslint', 'i18next', 'react-hooks'],
 	rules: {
 		indent: [2, 2],
 		'react/jsx-indent': [2, 2],
@@ -65,6 +65,8 @@ module.exports = {
 		'@typescript-eslint/member-delimiter-style': 'off',
 		'@typescript-eslint/no-floating-promises': 'off',
 		'@typescript-eslint/strict-boolean-expressions': 'off',
+		'react-hooks/rules-of-hooks': 'error',
+		'react-hooks/exhaustive-deps': 'error',
 		'i18next/no-literal-string': [
 			'error',
 			{

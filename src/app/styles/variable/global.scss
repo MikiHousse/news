@@ -7,7 +7,15 @@
   --font-size-l: 24px;
   --font-line-l: 32px;
   --font-l: var(--font-size-l) / var(--font-line-l);
+  /* stylelint-disable-next-line scss/double-slash-comment-empty-line-before */
+  // Размеры
   --navbar-height: 70px;
   --sidebar-width: 200px;
   --sidebar-width-collapsed: 80px;
+  /* stylelint-disable-next-line scss/double-slash-comment-empty-line-before */
+  // z - Индексы
+  --modal-z-index: 10;
+  /* stylelint-disable-next-line scss/double-slash-comment-empty-line-before */
+  // Цвета
+  --overlay-color: rgba(0 0 0 / 60%);
 }

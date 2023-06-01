@@ -1,4 +1,4 @@
-import { ComponentStory, ComponentMeta, Meta, StoryObj } from '@storybook/react';
+import { Meta, StoryObj } from '@storybook/react';
 
 import { Theme } from 'app/providers/ThemeProvider';
 import { Navbar } from './Navbar';
