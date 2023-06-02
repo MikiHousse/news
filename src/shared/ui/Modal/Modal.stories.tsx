@@ -21,8 +21,9 @@ export const Dark: Story = {
 Dark.decorators = [ThemeDecorator(Theme.DARK)];
 export const Light: Story = {
 	args: {
+		isOpen: true,
 		children:
 			'Повседневная практика показывает, что сложившаяся структура организации играет важную роль fverferf',
 	},
 };
-Dark.decorators = [ThemeDecorator(Theme.LIGHT)];
+Light.decorators = [ThemeDecorator(Theme.LIGHT)];
